@@ -23,7 +23,10 @@ const barlow = Barlow({
 export const metadata = {
   title: 'Space Tourism',
   description: 'Frontend Mentor Space Tourism Challenge',
-  author: 'Jossani da Cruz | @amateratsoo'
+  author: 'Jossani da Cruz | @amateratsoo',
+  icons: {
+    icon: '/favicon-32x32.png'
+  }
 }
 
 export default function RootLayout({
@@ -33,7 +36,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${barlow.variable} font-sans`}>{children}</body>
+      <body className={`${barlow.variable} font-sans bg-spacey-blue`}>{children}</body>
     </html>
   )
 }
