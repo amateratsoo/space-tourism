@@ -9,9 +9,10 @@ import data from '@/data.json';
 
 export default function Destination() {
   const [technologyIndex, setTechnologyIndex] = useState<number>(0);
-  const [isMediumDevice, setIsMediumDevice] = useState<boolean>(window.matchMedia('(min-width: 640px) and (max-width: 1024px)').matches);
+  const [isMediumDevice, setIsMediumDevice] = useState<boolean>();
 
   useEffect(() => {
+    setIsMediumDevice(window.matchMedia('(min-width: 640px) and (max-width: 1024px)').matches)
     const lookForResize = window.addEventListener('resize', () => setIsMediumDevice(window.matchMedia('(min-width: 640px) and (max-width: 1024px)').matches));
 
     return () => window.removeEventListener('resize', () => lookForResize);
@@ -26,7 +27,7 @@ export default function Destination() {
       </div>
 
       <div className='flex flex-col sm:h-full lg:flex-row-reverse lg:pl-20'>
-        <div className='w-full flex px-12 sm:px-0 my-7 items-center justify-end sm:my-0'>
+        <div className='w-full flex px-12 sm:px-0 my-7 items-center justify-center sm:justify-end sm:my-0'>
           <div className='flex justify-center items-end sm:block sm:h-full sm:w-full lg:h-[30rem] lg:w-[30rem]'>
             <Image 
               src={`${isMediumDevice ? data.technology[technologyIndex].images.landscape : data.technology[technologyIndex].images.portrait}`}
