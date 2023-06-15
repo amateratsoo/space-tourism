@@ -52,7 +52,7 @@ export default function Destination() {
             </ul>
           </nav>
 
-          <div className='w-full flex flex-col justify-center items-center lg:items-start'>
+          <div className='w-full pb-16 lg:pb-0 flex flex-col text-center justify-center items-center lg:items-start'>
             <span className='font-serif text-3xl mt-7 sm:mt-0 lg:text-2xl text-white/50'>{String(data.crew[crewIndex].role).toUpperCase()}</span>
 
             <h2 className='font-serif text-4xl lg:text-5xl my-4'>{String(data.crew[crewIndex].name).toUpperCase()}</h2>

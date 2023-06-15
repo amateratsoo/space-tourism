@@ -19,7 +19,7 @@ export default function Destination() {
   }, []);
 
   return (
-    <main className='w-screen h-screen text-white flex flex-col items-center relative bg-cover bg-no-repeat bg-technology-mobile sm:bg-technology-tablet md:bg-technology-tablet lg:bg-technology-desktop sm:overflow-x-hidden'>
+    <main className='w-screen h-screen text-white flex flex-col items-center relative bg-cover overflow-x-hidden bg-no-repeat bg-technology-mobile sm:bg-technology-tablet md:bg-technology-tablet lg:bg-technology-desktop sm:overflow-x-hidden'>
       <Header />
 
       <div className='w-full flex justify-center items-center pt-4 sm:py-10 sm:justify-start sm:pl-12 lg:pl-32'>
@@ -60,7 +60,7 @@ export default function Destination() {
             </ul>
           </nav>
 
-          <div className='w-full flex flex-col justify-center items-center lg:items-start'>
+          <div className='w-full pb-16 flex flex-col text-center justify-center items-center lg:items-start'>
             <span className='font-sans-serif tracking-widest text-xl mt-7 sm:mt-0 lg:text-2xl text-white/50'>THE TERMINOLOGY…</span>
 
             <h2 className='font-serif text-4xl lg:text-5xl my-4'>{String(data.technology[technologyIndex].name).toUpperCase()}</h2>

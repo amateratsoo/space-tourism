@@ -7,10 +7,10 @@ export default function Home() {
   const router = useRouter();
 
   return (
-    <main className='w-screen h-screen flex flex-col items-center relative bg-cover bg-no-repeat bg-home-mobile sm:bg-home-tablet md:bg-home-tablet lg:bg-home-desktop'>
+    <main className='w-screen h-screen overflow-y-auto flex flex-col items-center bg-cover bg-no-repeat bg-home-mobile sm:bg-home-tablet md:bg-home-tablet lg:bg-home-desktop'>
       <Header />
       
-      <div className='pt-20 px-[10%] py-16 flex flex-col items-center justify-between lg:flex-row lg:px-0 lg:py-0 h-full'>
+      <div className='sm:pt-20 px-[10%] gap-y-20 sm:gap-0 pb-16 sm:py-16 flex flex-col items-center justify-between lg:flex-row lg:px-0 lg:py-0 h-full'>
         <div className='text-white text-center flex flex-col gap-y-7 lg:text-left lg:flex-1 lg:px-[10%] lg:h-full lg:pb-48 lg:justify-end lg:items-start'>
           <h1 className='font-sans-serif text-xl tracking-widest text-indigo-blue'>SO, YOU WANT TO TRAVEL TO</h1>
           <h2 className='font-serif text-8xl'>SPACE</h2>
@@ -26,8 +26,6 @@ export default function Home() {
           </button>
         </div>
       </div>
-
-
     </main>
   )
 }

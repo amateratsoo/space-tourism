@@ -55,7 +55,7 @@ export default function Destination() {
 
           <hr className='bg-[#383B4B] h-[1px] border-none w-full my-10' />
 
-          <div className='flex flex-col w-full sm:flex-row sm:justify-evenly px-14 justify-center items-center gap-8 pb-16 lg:pb-0 lg:justify-start lg:px-0'>
+          <div className='flex flex-col w-full sm:flex-row sm:justify-evenly justify-center items-center gap-8 pb-16 lg:pb-0 lg:justify-start lg:px-0'>
             <div className='flex flex-col gap-3 sm:flex-1 text-center lg:text-left'>
               <span className='font-sans-serif text-indigo-blue text-lg tracking-widest'>AVG. DISTANCE</span>
               <span className='font-serif text-4xl'>{String(data.destinations[destinationIndex].distance).toUpperCase()}</span>
