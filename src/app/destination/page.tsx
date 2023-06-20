@@ -28,6 +28,7 @@ export default function Destination() {
             width={170}
             height={170}
             className='lg:w-80 lg:h-80'
+            loading='eager'
           />
         </div>
 
