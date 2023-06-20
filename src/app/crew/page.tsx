@@ -11,7 +11,7 @@ export default function Destination() {
   const [crewIndex, setCrewIndex] = useState<number>(0);
 
   return (
-    <main className='w-screen h-screen text-white flex flex-col items-center relative bg-cover bg-no-repeat bg-crew-mobile sm:bg-crew-tablet md:bg-crew-tablet lg:bg-crew-desktop'>
+    <main className='w-screen h-screen text-white flex flex-col items-center relative bg-cover bg-no-repeat bg-crew-mobile sm:bg-crew-tablet md:bg-crew-tablet md:overflow-x-hidden lg:bg-crew-desktop'>
       <Header />
 
       <div className='w-full flex justify-center items-center pt-4 sm:py-10 sm:justify-start sm:pl-12 lg:pl-32'>
